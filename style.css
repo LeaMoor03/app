@@ -1,0 +1,11 @@
+
+
+.box {
+    display: block;
+    max-width: 460px;
+    margin: 200px auto 20px;
+    padding: 30px 15px;
+    background-image: url(Media/weather-background-one.png);
+    border: 1px solid #cd4662;
+    border-radius: 10px;
+}
