@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Font;
+    src: url(fonts/Big\ Pixel\ Shadow\ demo.otf);
+}
 
 
 .box {
@@ -5,7 +9,7 @@
     max-width: 460px;
     margin: 200px auto 20px;
     padding: 30px 15px;
-    background-image: url(Media/weather-background-one.png);
+    background-image: url(Media/3.gif);
     border: 1px solid #cd4662;
     border-radius: 10px;
 }
@@ -13,9 +17,12 @@
  .date {
     color: white;
     text-align: center;
+    font-size: 15px;
+    font-family: Font;
 }
 .city {
-    font-size: 60px;
+    font-family: Font;
+    font-size: 55px;
     color: white;
     text-align: center;
 }
@@ -31,9 +38,10 @@
     margin-top: 5px;
 }
 .temperature {
+    font-family: Font;
     color: white;
-    font-size: 80px;
-    margin-left: 10px;
+    font-size: 55px;
+    margin-left: 12px;
 }
 .fahrenheit, .celsius {
     color: white;
@@ -42,11 +50,13 @@
     bottom: 30px;
 }
 .weather-like {
+    font-family: Font;
     color: white;
     text-align: center;
-    font-size: 25px;
+    font-size: 15px;
 }
 .forcast-list {
+    color: white;
     padding: 0;
     list-style: none;
     margin-left: 20px;
@@ -55,7 +65,13 @@
     position: relative;
     right: 6px;
 }
-.card {
-    padding: 15px 20px;
-    background: transparent;
+
+.wind-information {
+    font-family: Font;
+    font-size: 12px;
+    color: white;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
 }
