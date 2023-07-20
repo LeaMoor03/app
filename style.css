@@ -9,3 +9,13 @@
     border: 1px solid #cd4662;
     border-radius: 10px;
 }
+
+ .date {
+    color: white;
+    text-align: center;
+}
+.city {
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
