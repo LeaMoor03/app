@@ -6,7 +6,7 @@
 
 .box {
     display: block;
-    max-width: 460px;
+    max-width: 394px;
     margin: 200px auto 20px;
     padding: 30px 15px;
     background-image: url(Media/3.gif);
@@ -22,7 +22,7 @@
 }
 .city {
     font-family: Font;
-    font-size: 55px;
+    font-size: 40px;
     color: white;
     text-align: center;
 }
