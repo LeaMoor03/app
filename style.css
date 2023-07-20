@@ -19,3 +19,43 @@
     color: white;
     text-align: center;
 }
+.icons {
+    color: white;
+}
+.icon-and-temperature {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.main-icon {
+    margin-top: 5px;
+}
+.temperature {
+    color: white;
+    font-size: 80px;
+    margin-left: 10px;
+}
+.fahrenheit, .celsius {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    bottom: 30px;
+}
+.weather-like {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+.forcast-list {
+    padding: 0;
+    list-style: none;
+    margin-left: 20px;
+}
+.forcast-temperatures {
+    position: relative;
+    right: 6px;
+}
+.card {
+    padding: 15px 20px;
+    background: transparent;
+}
