@@ -2,6 +2,10 @@
     font-family: Font;
     src: url(fonts/Big\ Pixel\ Shadow\ demo.otf);
 }
+@font-face {
+    font-family: Small-Font;
+    src: url(fonts/Big\ Pixel\ Light\ demo.otf);
+}
 
 
 .box {
@@ -9,7 +13,7 @@
     max-width: 394px;
     margin: 200px auto 20px;
     padding: 30px 15px;
-    background-image: url(Media/3.gif);
+    background-image: url(Media/background.svg);
     border: 1px solid #cd4662;
     border-radius: 10px;
 }
@@ -18,7 +22,7 @@
     color: white;
     text-align: center;
     font-size: 15px;
-    font-family: Font;
+    font-family: Small-Font;
 }
 .city {
     font-family: Font;
@@ -59,13 +63,23 @@
     color: white;
     padding: 0;
     list-style: none;
+    margin-top: 10px;
     margin-left: 20px;
 }
+.forcast-day {
+    font-family: Font;
+    font-size: 15px;
+}
 .forcast-temperatures {
+    font-size: 11px;
     position: relative;
     right: 6px;
+    font-family: Font;
 }
-
+.card {
+    opacity: .75;
+    background: #FF6284;
+}
 .wind-information {
     font-family: Font;
     font-size: 12px;
