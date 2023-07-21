@@ -22,6 +22,7 @@
     color: white;
     text-align: center;
     font-size: 15px;
+    font-weight: 600;
     font-family: Small-Font;
 }
 .city {
@@ -30,16 +31,14 @@
     color: white;
     text-align: center;
 }
-.icons {
-    color: white;
+
+.main-icon {
+    margin-top: 5px;
 }
 .icon-and-temperature {
     padding: 0;
     list-style: none;
     text-align: center;
-}
-.main-icon {
-    margin-top: 5px;
 }
 .temperature {
     font-family: Font;
@@ -60,17 +59,22 @@
     font-size: 15px;
 }
 .forcast-list {
-    color: white;
     padding: 0;
     list-style: none;
     margin-top: 10px;
     margin-left: 20px;
 }
 .forcast-day {
-    font-family: Font;
+    color: white;
+    font-family: Small-Font;
+    font-weight: 600;
     font-size: 15px;
 }
+.icons {
+    color: white;
+}
 .forcast-temperatures {
+    color: white;
     font-size: 11px;
     position: relative;
     right: 6px;
@@ -81,7 +85,8 @@
     background: #FF6284;
 }
 .wind-information {
-    font-family: Font;
+    font-family: Small-Font;
+    font-weight: 600;    
     font-size: 11px;
     color: white;
     padding: 0;
