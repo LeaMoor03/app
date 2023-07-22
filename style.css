@@ -1,6 +1,6 @@
 @font-face {
     font-family: Font;
-    src: url(fonts/Over\ There.ttf);
+    src: url(fonts/Big\ Pixel\ Shadow\ demo.otf);
 }
 @font-face {
     font-family: Small-Font;
@@ -47,7 +47,7 @@ background: white;
 .city {
     font-family: Font;
     letter-spacing: 2.5px;
-    font-size: 25px;
+    font-size: 40px;
     color: white;
     text-align: center;
 }
@@ -65,13 +65,18 @@ background: white;
     font-family: Medium-Font;
     color: white;
     font-size: 55px;
-    margin-left: 12px;
+    margin-left: 141px;
+   
+}
+#fahrenheit {
+    margin-left: 55px;
 }
 .fahrenheit, .celsius {
     color: white;
     font-size: 20px;
     position: relative;
-    bottom: 30px;
+    top: 10px;
+   
 }
 .weather-like {
     font-family: Small-Font;
@@ -86,15 +91,11 @@ background: white;
     opacity: .75;
     background: #FF6284;
 }
-#humidity, #wind  {
-    font-family: Medium-Font;
-    font-size: 15px;
-}
 .wind-information {
-    font-family: Font;
+    font-family: Small-Font;
     letter-spacing: 2.5px;
     font-weight: 600;    
-    font-size: 10px;
+    font-size: 14px;
     color: white;
     padding: 0;
     list-style: none;

@@ -12,6 +12,7 @@ date.innerHTML = `${day} ${hour}:${minute}`;
 
 
   function displayTemperature(response) {
+    console.log(response.data);
     document.querySelector("#city").innerHTML = response.data.name;
     document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
     document.querySelector("#current-forcast").innerHTML = response.data.weather[0].description;
