@@ -1,12 +1,15 @@
 @font-face {
     font-family: Font;
-    src: url(fonts/Big\ Pixel\ Shadow\ demo.otf);
+    src: url(fonts/Over\ There.ttf);
 }
 @font-face {
     font-family: Small-Font;
     src: url(fonts/Big\ Pixel\ Light\ demo.otf);
 }
-
+@font-face {
+    font-family: Medium-Font;
+    src: url(fonts/Big\ Pixel\ Shadow\ demo.otf);
+}
 
 .box {
     display: block;
@@ -17,17 +20,34 @@
     border: 1px solid #cd4662;
     border-radius: 10px;
 }
-
+#input-city {
+    font-family: Small-Font;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    background-color: white;
+    opacity: .75;
+    border: 1px solid #FF6284;
+}
+#click-me {
+font-family: Small-Font;
+letter-spacing: 1.5px;
+font-weight: 600;
+background: white;
+ opacity: .75;
+ border: 1px solid #FF6284;
+}
  .date {
     color: white;
     text-align: center;
-    font-size: 15px;
-    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    font-weight: 650;
     font-family: Small-Font;
 }
 .city {
     font-family: Font;
-    font-size: 40px;
+    letter-spacing: 2.5px;
+    font-size: 25px;
     color: white;
     text-align: center;
 }
@@ -42,7 +62,7 @@
     text-align: center;
 }
 .temperature {
-    font-family: Font;
+    font-family: Medium-Font;
     color: white;
     font-size: 55px;
     margin-left: 12px;
@@ -54,19 +74,27 @@
     bottom: 30px;
 }
 .weather-like {
-    font-family: Font;
+    font-family: Small-Font;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
     color: white;
+    font-weight: 650;
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
 }
 .card {
     opacity: .75;
     background: #FF6284;
 }
+#humidity, #wind  {
+    font-family: Medium-Font;
+    font-size: 15px;
+}
 .wind-information {
-    font-family: Small-Font;
+    font-family: Font;
+    letter-spacing: 2.5px;
     font-weight: 600;    
-    font-size: 11px;
+    font-size: 10px;
     color: white;
     padding: 0;
     list-style: none;

@@ -21,7 +21,7 @@ date.innerHTML = `${day} ${hour}:${minute}`;
 
 
 let apiKey = "1d86c5d4e2dfc784a979801c54b2b2f4";
-let apiUrl =  ` https://api.openweathermap.org/data/2.5/weather?q=GreenLand&appid=${apiKey}&units=metric`
+let apiUrl =  ` https://api.openweathermap.org/data/2.5/weather?q=Livonia&appid=${apiKey}&units=metric`
 
 console.log(apiUrl);
 axios.get(apiUrl).then(displayTemperature);
