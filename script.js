@@ -29,18 +29,26 @@ return `${day} ${hours}:${minutes}`;
 
 
   function displayTemperature(response) {
-    console.log(response.data);
+    let iconElement = document.querySelector("#main-icon");
+
     document.querySelector("#city").innerHTML = response.data.name;
     document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
     document.querySelector("#current-forcast").innerHTML = response.data.weather[0].description;
     document.querySelector("#humidity").innerHTML = response.data.main.humidity;
     document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
     document.querySelector("#date").innerHTML = formatDate(response.data.dt * 1000);
+    iconElement.setAttribute(
+        "src",
+        `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+      );
+      iconElement.setAttribute("alt", response.data.weather[0].description);
+    
   }
 
 
 let apiKey = "1d86c5d4e2dfc784a979801c54b2b2f4";
-let apiUrl =  ` https://api.openweathermap.org/data/2.5/weather?q=Livonia&appid=${apiKey}&units=metric`
+let city = "New York";
+let apiUrl =  ` https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
 
 console.log(apiUrl);
 axios.get(apiUrl).then(displayTemperature);
