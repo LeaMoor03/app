@@ -25,9 +25,6 @@ let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday","Sa
 let day = days[date.getDay()];
 return `${day} ${hours}:${minutes}`;
 }
-
-
-
   function displayTemperature(response) {
     let iconElement = document.querySelector("#main-icon");
 
@@ -44,12 +41,19 @@ return `${day} ${hours}:${minutes}`;
       iconElement.setAttribute("alt", response.data.weather[0].description);
     
   }
-
-
+function search(city) {
 let apiKey = "1d86c5d4e2dfc784a979801c54b2b2f4";
-let city = "New York";
 let apiUrl =  ` https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
-
-console.log(apiUrl);
 axios.get(apiUrl).then(displayTemperature);
+}
+function handleSubmit(event) {
+    event.preventDefault();
+    let cityInputElement = document.querySelector("#input-city");
+    search(cityInputElement.value);
+}
+search("Seoul");
+
+let form = document.querySelector("#city-form");
+form.addEventListener("submit",handleSubmit);
+
 
