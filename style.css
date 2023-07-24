@@ -44,6 +44,9 @@ background: white;
  opacity: .75;
  border: 1px solid white;
 }
+#click-me:hover {
+    color: #451c51;
+}
 
 
  .date {
