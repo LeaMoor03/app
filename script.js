@@ -40,6 +40,7 @@ return `${day} ${hours}:${minutes}`;
       );
       iconElement.setAttribute("alt", response.data.weather[0].description);
     
+      celsiusTemperature = response.data.main.temp;
   }
 function search(city) {
 let apiKey = "1d86c5d4e2dfc784a979801c54b2b2f4";
@@ -51,9 +52,29 @@ function handleSubmit(event) {
     let cityInputElement = document.querySelector("#input-city");
     search(cityInputElement.value);
 }
-search("Seoul");
+function showFahrenheitTemp(event) {
+    event.preventDefault();
+let  temperatureElement = document.querySelector("#temperature");
+   let  fahrenheitTemperature = (celsiusTemperature * 9) / 5  + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+function showCelsiusTemp(event) {
+    event.preventDefault();
+    let temperatureElement = document.querySelector("#temperature");
+    temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+
+let celsiusTemperature = null;
+
 
 let form = document.querySelector("#city-form");
 form.addEventListener("submit",handleSubmit);
 
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", showCelsiusTemp);
 
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", showFahrenheitTemp);
+
+search("Seoul");
