@@ -117,3 +117,16 @@ background: white;
     display: flex;
     justify-content: space-evenly;
 }
+
+.coder {
+    text-align: center;
+}
+
+.coder, a {
+    text-decoration: none;
+    color: #C23F49;
+}
+
+.coder, p {
+    color: black;
+}
